@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Quiz That Might Leave You Quiet for a While.</title>
+    <meta name="description" content="30 honest questions to reconnect you with what actually matters to you.">
+
+    <meta property="og:title" content="A Quiz That Might Leave You Quiet for a While.">
+    <meta property="og:description" content="30 honest questions to reconnect you with what actually matters to you.">
+    <meta property="og:image" content="YOUR_IMAGE_URL_HERE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_QUIZ_URL_HERE">
+
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+
+    <header class="progress-header">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar-fill"></div>
+        </div>
+        <span id="progress-text" class="progress-indicator">0 of 30</span>
+    </header>
+
+    <main id="quiz-app">
+        <div id="quiz-container">
+            <button id="back-btn" aria-label="Go back to previous question" class="hidden">&larr; Back</button>
+
+            <section id="question-area" aria-live="polite">
+                <h1 id="question-text" class="question-headline">Question loading...</h1>
+                <div id="answer-options" class="answer-grid">
+                    </div>
+            </section>
+        </div>
+
+        <div id="results-container" class="hidden">
+             <section aria-label="Quiz Results and Reflection">
+                <h1 class="results-headline">Your Reflection</h1>
+                <div id="reflection-text" class="reflection-content"></div>
+
+                <form id="cta-form" novalidate>
+                    <h2 class="cta-headline">Continue Your Journey</h2>
+                    <div class="form-group">
+                        <label for="user-name" class="form-label">Name:</label>
+                        <input type="text" id="user-name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email" class="form-label">Email:</label>
+                        <input type="email" id="user-email" name="email" class="form-input" required>
+                        <p id="email-error" class="error-message hidden">Please enter a valid email address.</p>
+                    </div>
+                    <p class="privacy-note">
+                        I respect your privacy. We’ll only use your name and email to deliver the course and relevant follow-up content. Your info will never be shared—ever!
+                    </p>
+                    <button type="submit" id="cta-submit-btn" class="cta-button" disabled>
+                        Sign me up for the free I Love My Life in Six Days mini-course
+                    </button>
+                </form>
+                <p id="success-message" class="success-message hidden">
+                    You're in! You’ve been signed up for the I Love My Life in Six Days mini-course. Check your inbox shortly for Day 1.
+                </p>
+             </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
