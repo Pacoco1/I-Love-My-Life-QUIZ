@@ -149,7 +149,7 @@ body {
     width: 100%;
     padding: 15px 20px;
     background-color: #ff5349;
-    color: #0b132b;
+    color: #faf9f6; /* White text BEFORE selection */
     border: 2px solid var(--text-color);
     text-align: center;
     cursor: pointer;
