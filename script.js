@@ -316,7 +316,7 @@ const pauseScreens = [
         image: "images/authenticity.jpg"
     },
     {
-        quote: "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.",
+        quote: “Connection is why we’re here; it is what gives purpose and meaning to our lives.",
         author: "Marcel Proust",
         image: "images/connection.jpg"
     },
