@@ -316,8 +316,8 @@ const pauseScreens = [
         image: "images/authenticity.jpg"
     },
     {
-        quote: “Connection is why we’re here; it is what gives purpose and meaning to our lives.",
-        author: "Marcel Proust",
+        quote: "Nothing brings people together like vulnerability and truth.",
+        author: "Adam Sun",
         image: "images/connection.jpg"
     },
     {
@@ -326,8 +326,8 @@ const pauseScreens = [
         image: "images/gratitude.jpg"
     },
     {
-        quote: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
-        author: "Ralph Waldo Emerson",
+        quote: "The right path and easy path are usually two different things... Always choose the right path over the easy.",
+        author: "Deatri King-Bey",
         image: "images/right-path.jpg"
     }
 ];
