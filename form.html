@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Continue Your Journey - I Love My Life</title>
+    <meta name="description" content="Continue your journey with a free mini-course after your reflection quiz.">
+    <meta property="og:title" content="Continue your 'I Love My Life' journey" />
+    <meta property="og:description" content="Sign up for a free 6-day mini-course to keep growing." />
+    <meta property="og:image" content="https://i.ibb.co/RGBqLxbJ/Untitled-design-17.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/form.html" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="form-app">
+        <!-- Form Container -->
+        <div id="form-container">
+            <section aria-label="Continue Your Journey">
+                <h1 class="results-headline">Continue Your Journey</h1>
+                
+                <!-- Personal Invitation Message -->
+                <div id="invitation-message" class="invitation-message"></div>
+                
+                <!-- Mailchimp Embed Form -->
+                <form action="https://ilovemylife.us3.list-manage.com/subscribe/post?u=980450ca2faf6735f0032dbba&amp;id=bd87c8406f&amp;f_id=0072e4e3f0"
+                      method="post"
+                      id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form"
+                      class="validate"
+                      target="_blank" 
+                      onsubmit="setTimeout(function(){window.location.href='https://ilovemylife.me/welcome';}, 500);"
+                      aria-label="Sign up for the free mini-course">
+                    <div class="form-group">
+                        <label for="user-email" class="form-label">Email Address</label>
+                        <input type="email" id="user-email" name="EMAIL" class="form-input" placeholder="Email Address" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="user-name" class="form-label">First Name</label>
+                        <input type="text" id="user-name" name="FNAME" class="form-input" placeholder="First Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="user-last-name" class="form-label">Last Name</label>
+                        <input type="text" id="user-last-name" name="MMERGE2" class="form-input" placeholder="Last Name" />
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="submit" name="subscribe" id="cta-submit-btn" class="cta-button" value="Sign me up for the free 6-day mini-course" />
+                        <span id="email-error" class="error-message hidden">Invalid email address. Please try again.</span>
+                    </div>
+                </form>
+
+                <p id="success-message" class="success-message hidden">
+                    You're in! You've been signed up for the I Love My Life in Six Days mini-course. Check your inbox shortly for Day 1.
+                </p>
+            </section>
+        </div>
+
+        <!-- Footer Logo -->
+        <div class="logo-container">
+            <img id="logo-footer" src="images/logo.png" alt="I Love My Life logo" width="200">
+        </div>
+    </main>
+
+    <!-- Add scripts to display personalized invitation and handle form validation -->
+    <script>
+        // These are copies of the formInvitations from script.js, needed here since this is a separate page
+        const formInvitations = {
+            "Level 1": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
+            "Level 2": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
+            "Level 3": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
+            "Level 4": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
+            "Level 5": `If you feel inspired to explore more tools to help you stay connected or go even deeper, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Display personalized invitation message
+            const invitationMessage = document.getElementById('invitation-message');
+            const userLevel = localStorage.getItem('userReflectionLevel') || 'Level 3';
+            invitationMessage.textContent = formInvitations[userLevel];
+            
+            // Form validation
+            const form = document.getElementById('mc-embedded-subscribe-form');
+            const emailInput = document.getElementById('user-email');
+            const emailError = document.getElementById('email-error');
+            const successMessage = document.getElementById('success-message');
+
+            form.addEventListener('submit', function(event) {
+                // Simple email validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(emailInput.value)) {
+                    event.preventDefault();
+                    emailError.classList.remove('hidden');
+                    return false;
+                }
+
+                // Hide form and show success message
+                setTimeout(function() {
+                    form.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                }, 500);
+
+                return true;
+            });
+        });
+    </script>
+</body>
+</html>
