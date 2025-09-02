@@ -95,7 +95,7 @@ body {
 
 #quiz-container,
 #results-container,
-#pause-container
+#pause-container,
 #form-container {
     background-color: var(--bg-color);
     padding: 30px 20px;
@@ -497,4 +497,7 @@ body {
         font-size: 0.88em;
         letter-spacing: 0px;
     }
+}
+#pause-container section {
+    text-align: center;
 }
