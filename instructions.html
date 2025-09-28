@@ -11,7 +11,7 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourdomain.com/instructions.html" />
-  <title>Instructions – I Love My Life Quiz</title>
+  <title>Instructions — I Love My Life Quiz</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     /* --- Global Styles --- */
@@ -32,6 +32,32 @@
     /* --- Content Container --- */
     .container {
       max-width: 700px;
+    }
+
+    /* --- Video Section --- */
+    .video-section {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin-bottom: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* --- Headings --- */
@@ -71,10 +97,59 @@
       background-color: #ffffff;
       color: #0b132b;
     }
+
+    /* --- Mobile Responsiveness --- */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+      
+      .container {
+        max-width: 100%;
+      }
+      
+      h1 {
+        font-size: 1.8em;
+      }
+      
+      p {
+        font-size: 1.1em;
+      }
+      
+      .video-section {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      
+      p {
+        font-size: 1em;
+      }
+      
+      .start-button {
+        font-size: 1em;
+        padding: 12px 25px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Video Section -->
+    <div class="video-section">
+      <div class="video-container">
+        <video playsinline controls>
+          <source src="videos/the dude.mp4" type="video/mp4">
+          <source src="videos/the dude.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
     <!-- Main Heading -->
     <h1>Welcome to<br>"I Love My Life" Quiz</h1>
 
@@ -83,8 +158,8 @@
     <p>Taking this quiz is a <strong>bold step</strong> toward your truth and your authenticity.</p>
 
     <!-- Quiz Description -->
-    <p>This isn’t just an online questionnaire-it’s a deep self-reflection, carefully crafted to help you see where you truly are right now. In just a few minutes, through 30 thoughtful questions, you’ll be invited to slow down and check in with yourself.</p>
-    <p>Some of the questions might surprise you. They’re meant to stir something deeper, to awaken parts of you that may have gone quiet. Sometimes, simply reading the right question is enough to shift something inside.</p>
+    <p>This isn't just an online questionnaire-it's a deep self-reflection, carefully crafted to help you see where you truly are right now. In just a few minutes, through 30 thoughtful questions, you'll be invited to slow down and check in with yourself.</p>
+    <p>Some of the questions might surprise you. They're meant to stir something deeper, to awaken parts of you that may have gone quiet. Sometimes, simply reading the right question is enough to shift something inside.</p>
     <p>I celebrate you for showing up for yourself like this!</p>
 
     <!-- How to Approach the Quiz -->
@@ -96,7 +171,7 @@
 
     <!-- Start Button -->
     <button class="start-button" onclick="location.href='quiz.html'" aria-label="Begin the 'I Love My Life' quiz">
-      Let’s Begin
+      Let's Begin
     </button>
   </div>
 </body>
