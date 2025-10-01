@@ -574,7 +574,7 @@ function showResults() {
         loadingContainer.classList.add('hidden');
         resultsContainer.classList.remove('hidden');
         window.scrollTo(0, 0);
-    }, 7000);
+    }, 5000);
     
     progressBar.style.width = '100%';
     progressBar.setAttribute('aria-valuenow', 100);
