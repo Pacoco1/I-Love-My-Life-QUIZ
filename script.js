@@ -49,7 +49,7 @@ const quizData = [
         options: [
             "Proud? I mostly feel like I'm stumbling in slow motion, hoping no one's watching",
             "I'm proud for about 3 minutes, then start Googling 'Why don't I ever feel enough?'",
-            "I'm still arriving - but damn, I'd want to be friends with who I'm becoming",
+            "I feel proud sometimes, but still doubt myself regularly",
             "I feel proud - this is exactly who I always knew I could be"
         ]
     },
@@ -100,7 +100,7 @@ const quizData = [
         question: "How do you feel about the future?",
         options: [
             "I try not to think about it - it's too overwhelming",
-            "I think about it just enough to panic, then distract myself",
+            "I worry about it constantly but feel powerless to plan",
             "I think it holds good things, even if I'm still scared",
             "I feel grounded and excited, like I'm creating something meaningful"
         ]
@@ -130,7 +130,7 @@ const quizData = [
         question: "How do you feel about change in your life?",
         options: [
             "I resist it with everything I've got",
-            "I love change - unless it's in my routine, my relationships, or the location of my favorite mug",
+            "I accept change intellectually but struggle with it emotionally",
             "I try to embrace it, but it still throws me off at times",
             "I see it as growth - even if it's messy"
         ]
@@ -233,7 +233,7 @@ const quizData = [
         options: [
             "Celebrate? I usually skip to what's next",
             "I downplay it so I don't seem full of myself",
-            "I give myself a high five and then apologize to the air for being 'too much'",
+            "I celebrate for a second, then wonder if I should've done better",
             "I celebrate like I'm throwing a party for my soul"
         ]
     },
@@ -245,7 +245,7 @@ const quizData = [
         options: [
             "I avoid it until it's too much to handle - then I'm all over the place",
             "I try to manage it, but I usually spiral into frustration",
-            "I write dramatic poetry in my head, then eat snacks I don't even like",
+            "I feel it, then immediately stress-bake something I won't eat",
             "I process it with compassion and learn from it every time"
         ]
     },
@@ -274,7 +274,7 @@ const quizData = [
         question: "How do you feel about your personal growth?",
         options: [
             "I avoid self-work unless life forces me into it",
-            "I've read the book, underlined everything, and still haven't done the exercises",
+            "I do some self-work but give up when it gets uncomfortable",
             "I'm making progress and becoming more self-aware",
             "I actively invest in my growth - it excites and empowers me"
         ]
