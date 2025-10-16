@@ -89,7 +89,7 @@ const quizData = [
         options: [
             "I criticize or try to fix myself as fast as I can",
             "I try to slow down, but I still feel like a mess",
-            "I'm learning to hold space for myself - with care that's still finding its footing",
+            "I can pause and offer myself compassion, even if it's imperfect",
             "I always offer myself love and empathy - no matter how messy I am"
         ]
     },
@@ -141,7 +141,7 @@ const quizData = [
         options: [
             "Like I'm too much or not enough - sometimes both",
             "I try to show up, but half the time it feels like we're tuned to different radio stations",
-            "Emotionally intimate, but still ask if they like me every 3 days",
+            "Emotionally intimate, but I'm secretly keeping score of who texts first",
             "I feel safe, accepted, and entirely free to be myself"
         ]
     },
@@ -150,7 +150,7 @@ const quizData = [
         question: "How do you feel about the relationships you currently have?",
         options: [
             "I often feel alone, even when I'm with others",
-            "I have people, but sometimes I still feel like I'm the extra in someone else's movie",
+            "I have people, but I'm not sure they'd notice if I disappeared for a week",
             "I have meaningful connections, but I still long for more depth",
             "I feel deeply seen, supported, and connected"
         ]
@@ -214,7 +214,7 @@ const quizData = [
             "It feels like standing naked in a spotlight... with a room full of people holding comment cards",
             "Sometimes I let myself be seen, but I still wear armor just in case",
             "I show up mostly as I am - even if I still feel exposed",
-            "Being seen or not doesn't shake me - I trust the home I've built inside"
+            "Being seen doesn't shake me - I trust who I am"
         ]
     },
     // Q20 (was Q16) - Authentic Expression
@@ -256,7 +256,7 @@ const quizData = [
             "I panic-delete everything and then doubt my whole existence",
             "I try to move on quickly, but the sting lingers",
             "I give myself grace and try to learn from it",
-            "I see failure as part of my growth - it's not personal"
+            "It's just data. I try to learn the lesson and move on"
         ]
     },
     // Q24 (was Q23) - Resilience & Growth
@@ -318,7 +318,7 @@ const quizData = [
             "I mostly ignore it unless it starts yelling at me",
             "I try... but my old habits keep showing up like exes with opinions",
             "I treat it like a garden - some days I water it well, other days I forget",
-            "I care for it like a temple - rest, high-vibe food, and movement"
+            " care for it consistently - rest, nourishment, and movement feel natural"
         ]
     },
     // Q30 (was Q29) - Self-Awareness
@@ -328,7 +328,7 @@ const quizData = [
             "I spend a lot of my life haunted by it",
             "I try to move forward, but I still react from my old stories",
             "I'm mostly at peace with it, though some areas still feel tender",
-            "I've made peace with all of it - it's like a sacred part of my story"
+            "It's what got me here. I've learned from it, and I've moved on"
         ]
     }
 ];
@@ -351,9 +351,9 @@ const pauseScreens = [
         image: "images/gratitude.png"
     },
     {
-        quote: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
-        author: "Ralph Waldo Emerson",
-        image: "images/life-love.png"
+        quote: "He who has a why to live for can bear almost any how.",
+    author: "Friedrich Nietzsche",
+    image: "images/life-love.png"
     }
 ];
 
