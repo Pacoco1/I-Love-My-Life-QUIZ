@@ -21,10 +21,15 @@
         <!-- Form Container -->
         <div id="form-container">
             <section aria-label="Continue Your Journey">
-                <h1 class="results-headline">Continue Your Journey</h1>
                 
-                <!-- Personal Invitation Message -->
-                <div id="invitation-message" class="invitation-message"></div>
+                <!-- Introduction Text -->
+                <div style="margin-bottom: 40px; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    <h2 style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px; text-align: center;">The Quiz Showed You the Pattern.</h2>
+                    <p style="font-size: 1.15em; line-height: 1.6; margin-bottom: 15px;">Seeing it is the first step. And it can be a lot to take in.</p>
+                    <p style="font-size: 1.15em; line-height: 1.6; margin-bottom: 15px;">The question now is, what do you do with it?</p>
+                    <p style="font-size: 1.15em; line-height: 1.6; margin-bottom: 15px;">If you want to go deeper, I have a free 6-day mini-course that teaches the simple, practical tools to <strong>stop running on autopilot.</strong></p>
+                    <p style="font-size: 1.15em; line-height: 1.6; margin-bottom: 15px;">It takes about 30 minutes a day, split into small chunks. The goal isn't to fix you; it's to give you what you need to actually be <strong>present for the life you've worked so hard to build.</strong></p>
+                </div>
                 
                 <!-- Mailchimp Embed Form -->
                 <form action="https://ilovemylife.us3.list-manage.com/subscribe/post?u=980450ca2faf6735f0032dbba&amp;id=bd87c8406f&amp;f_id=0072e4e3f0"
@@ -65,24 +70,9 @@
         </div>
     </main>
 
-    <!-- Add scripts to display personalized invitation and handle form validation -->
+    <!-- Form validation script -->
     <script>
-        // These are copies of the formInvitations from script.js, needed here since this is a separate page
-        const formInvitations = {
-            "Level 1": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
-            "Level 2": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
-            "Level 3": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
-            "Level 4": `If you feel inspired to receive simple but powerful tools to improve your life, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`,
-            "Level 5": `If you feel inspired to explore more tools to help you stay connected or go even deeper, I'm offering a free 6-day mini-course designed to fit easily into a busy day.`
-        };
-
         document.addEventListener('DOMContentLoaded', function() {
-            // Display personalized invitation message
-            const invitationMessage = document.getElementById('invitation-message');
-            const userLevel = localStorage.getItem('userReflectionLevel') || 'Level 3';
-            invitationMessage.textContent = formInvitations[userLevel];
-            
-            // Form validation
             const form = document.getElementById('mc-embedded-subscribe-form');
             const emailInput = document.getElementById('user-email');
             const emailError = document.getElementById('email-error');
